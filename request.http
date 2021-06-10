@@ -1,0 +1,24 @@
+curl --request POST \
+  --url http://localhost:1000/auth/register \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"email" : "muhammadikhsan1@gmail.com",
+	"password" : "Ikhsan20"
+}'
+
+curl --request POST \
+  --url http://localhost:1000/auth/login \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"email" : "muhammadikhsan1@gmail.com",
+	"password" : "Ikhsan20"
+}'
+
+curl --request GET \
+  --url http://localhost:1000/auth/validate \
+  --header 'Content-Type: application/json' \
+  --header 'Cookie: X-JWT-TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11aGFtbWFkaWtoc2FuMUBnbWFpbC5jb20iLCJhdWQiOiJHZW5lcmF0ZVRva2VucyIsImlzcyI6IkdlbmVyYXRlVG9rZW5zIn0.xPCtfbpb6xeTgPbSeGMUlTLCN09S0SzZmGQ8elmTZa4; Expires=Fri, 10 Jun 2022 13:20:58 GMT; Domain=localhost; Path=/; Secure; HttpOnly' \
+  --data '{
+	"email" : "muhammadikhsan1@gmail.com",
+	"password" : "Ikhsan20"
+}'
