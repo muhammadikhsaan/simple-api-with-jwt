@@ -1,0 +1,16 @@
+[DBUG] 2021/06/10 20:55 API: 3 registered routes (1 GET and 2 POST)
+GET: /auth/validate (./src/routes/main.routes.go:40)
+     • iris.glob. (C:/Users/muham/go/pkg/mod/github.com/kataras/iris/v12@v12.2.0-alpha2.0.20210607123319-8f9140b70501/aliases.go:307)
+     • github.com/muhammadikhsaan/simple-api-with-jwt.git/src/pages/auth/controller.Validate (./src/pages/auth/controller/validate.controller.go:7)
+
+POST: /auth/login (./src/routes/main.routes.go:38)
+      • iris.glob. (C:/Users/muham/go/pkg/mod/github.com/kataras/iris/v12@v12.2.0-alpha2.0.20210607123319-8f9140b70501/aliases.go:307)
+      • github.com/muhammadikhsaan/simple-api-with-jwt.git/src/pages/auth/controller.Login (./src/pages/auth/controller/login.controller.go:15)
+POST: /auth/register (./src/routes/main.routes.go:39)
+      • iris.glob. (C:/Users/muham/go/pkg/mod/github.com/kataras/iris/v12@v12.2.0-alpha2.0.20210607123319-8f9140b70501/aliases.go:307)
+      • github.com/muhammadikhsaan/simple-api-with-jwt.git/src/pages/auth/controller.Register (./src/pages/auth/controller/register.controller.go:11)
+
+Now listening on: http://localhost:1000
+Application started. Press CTRL+C to shut down.
+2021-06-10 20:55:46|875.9249ms|200|POST|/auth/login|::1|68 B|210 B|{"email":"muhammadikhsan1@gmail.com","password":"Ikhsan20"}|
+2021-06-10 20:56:02|722.5µs|200|GET|/auth/validate|::1|68 B|97 B|{"email":"muhammadikhsan1@gmail.com","password":"Ikhsan20"}|
