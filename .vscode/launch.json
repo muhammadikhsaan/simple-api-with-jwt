@@ -5,12 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch",
+            "name": "Golang",
             "type": "go",
-            "mode": "debug",
-            "remotePath": "",
-            "showLog": true,
-            "program": "${fileDirname}"
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
+            "program": "${workspaceFolder}"
         }
     ]
 }
